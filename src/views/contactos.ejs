@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>
+        <%= etiqueta %>
+    </title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navigation') %>
+
+    <!-- Formulario de cotización de mudanza -->
+    <div class="container py-5 d-flex justify-content-center align-items-center">
+
+        <div class="card shadow-lg" style="background-color:#1a1a1a; color:#e8e8e8; border: 1px solid #333; max-width: 600px; width: 100%;">
+
+            <div class="card-header text-center" style="background-color:#0d0d0d; border-bottom: 2px solid ">
+                <h3 class="mb-0">Solicita tu cotización</h3>
+                <small style="color:#888;">Cuéntanos los detalles de tu mudanza</small>
+            </div>
+
+            <div class="card-body p-4">
+                <form action="/cotizar" method="POST">
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                                class="form-control" style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000"
+                                class="form-control" style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="correo" class="form-label">Correo electrónico</span></label>
+                            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com"
+                                class="form-control" style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="tipoMudanza" class="form-label">Tipo de mudanza</span></label>
+                            <select id="tipoMudanza" name="tipoMudanza" class="form-select"
+                                style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="local">Local</option>
+                                <option value="nacional">Nacional</option>
+                                <option value="empresarial">Empresarial</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="origen" class="form-label">Ciudad de origen</label>
+                            <input type="text" id="origen" name="origen" placeholder="Ej: Pereira"
+                                class="form-control" style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="destino" class="form-label">Ciudad de destino</label>
+                            <input type="text" id="destino" name="destino" placeholder="Ej: Bogotá"
+                                class="form-control" style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Cuéntanos qué necesitas</label>
+                            <textarea id="mensaje" name="mensaje" rows="3" class="form-control"
+                                style="background-color:#2a2a2a; color:#e8e8e8; border-color:#333;"
+                                placeholder="Ej: Necesito mudanza de apartamento de 2 habitaciones..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn me-2" style="background-color:#c0392b; color:white; padding: 8px 30px;">
+                            Enviar solicitud
+                        </button>
+                        <button type="reset" class="btn" style="background-color:transparent; color:#888; border:1px solid #333;">
+                            Limpiar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

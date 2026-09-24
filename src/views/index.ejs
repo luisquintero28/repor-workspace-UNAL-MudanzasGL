@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>
+        <%= etiqueta %>
+     </title>
+      <%- include('partials/head') %>
+  
+</head>
+<body>
+    <%- include('partials/navigation') %>
+        <!-- Contenido Principal-->
+        <header class="container vh-100 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">    
+               <img src="img/logo.gl.png" alt="" class="w-80">
+               <h1 class="display-1 my-5 text-uppercase fw-bold text-black"> mudanza GL</h1>
+               <a href="/login" class="btn me-2" style="background-color:#c0392b; color:white; padding: 8px 30px;"> Inicio de sesion </a>
+            </div>
+        </header> 
+        <h1> "Buenos dias estimado cliente" la hora es <%= hora %>
+        </h1>
+
+        <%- include('partials/footer') %>
+</body>
+</html>

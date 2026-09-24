@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>
+        <%= etiqueta %>
+    </title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navigation') %>
+
+    <main class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+
+        <div class="menu-card text-center p-5">
+            <h1 class="mb-3">¡Gracias, <%= nombre %>!</h1>
+            <p class="mb-4">Hemos recibido tu solicitud de cotización. Nuestro equipo te contactará muy pronto.</p>
+            <a href="/" class="btn btn-danger rounded-pill px-4">Volver al inicio</a>
+        </div>
+
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>
+

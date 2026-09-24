@@ -1,0 +1,97 @@
+body {
+    background: #cac5c5;
+}
+
+.menu-card {
+    background: #1a1a1a;
+    border-top: 3px solid #faf7f7;
+    border-radius: 8px;
+    color: #e8e8e8;
+    max-width: 600px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+}
+
+.menu-card h1 {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.menu-card p {
+    color: #aaa;
+}
+
+.login-wrapper {
+    background: #1a1a1a;
+    border-radius: 14px;
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 35px rgba(223, 217, 217, 0.5);
+}
+
+.login-header {
+    border-bottom: 2px solid #f8f7f6;
+    padding: 4px 0 16px;
+    text-align: center;
+}
+
+.login-header h1 {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.login-card {
+    padding: 20px 10px 6px;
+}
+
+.login-card .form-control {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border-color: #333;
+}
+
+.login-card .form-control::placeholder {
+    color: #888;
+}
+
+.login-card .form-control:focus {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border-color: #c0392b;
+    box-shadow: none;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+.btn-danger:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-outline-light:hover {
+    background-color: #2a2a2a;
+}
+
+.links a {
+    color: #888 !important;
+    font-size: 0.85rem;
+}
+.links a:hover {
+    color: #c0392b !important;
+}
+
+.error {
+    color: #e74c3c;
+    background: #2a2a2a;
+    border-left: 3px solid #c0392b;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+
+.oculto {
+    display: none !important;
+}
